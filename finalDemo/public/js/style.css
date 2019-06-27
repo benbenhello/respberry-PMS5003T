@@ -1,0 +1,16 @@
+div.cellforshow {
+    border-style: none;
+    border-width: 1px;
+    text-align: center;
+    height: 225px;
+    background-color: azure !important;
+}
+
+div.cellforshow:hover {
+    background-color: skyblue !important;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}

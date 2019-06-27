@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>to school or not to school</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- Material Kit CSS -->
+  <link href="assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
+  <link rel=stylesheet type="text/css" href="js/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="js/style.js"></script>
+</head>
+
+<body>
+  <div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="white">
+      <!--
+      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+      Tip 2: you can also add an image using data-image tag
+  -->
+      <div class="logo"></div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">
+              <i class="material-icons">
+                home
+              </i>
+              <p>Home Page</p>
+            </a>
+          </li>
+          <li class="nav-item active  ">
+            <a class="nav-link" href="/plugin">
+              <i class="material-icons">dashboard</i>
+              <p>plug-in</p>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="https://www.nccu.edu.tw/app/home.php" style="font-size: 40px">
+              <i class="material-icons">data_usage</i>&nbsp Data
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#pablo">
+                  <i class="material-icons">notifications</i> Notifications
+                </a>
+              </li>
+              <!-- your navbar here -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row" style="margin-bottom: 55px;margin-left: 10px;">
+
+          <!-- your content here -->
+          <!--div class="col-lg-3 col-md-6 col-sm-6"-->
+          <div class="col-4">
+            <div class="card card-stats">
+              <div class="card-header card-header-warning card-header-icon">
+                <div class="card-icon">
+                  <i class="material-icons">error_outline</i>
+                </div>
+                <p class="card-category">PM 1</p>
+                <h3 class="card-title">
+                  <small id="pm1"><%= PM1 %></small>
+                </h3>
+              </div>
+              <div class="card-footer">
+                <div class="stats">
+                  <i class="material-icons text-danger">warning</i>say somthing
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- your content here -->
+          <!--div class="col-lg-3 col-md-6 col-sm-6"-->
+          <div class="col-4">
+            <div class="card card-stats">
+              <div class="card-header card-header-warning card-header-icon">
+                <div class="card-icon">
+                  <i class="material-icons">error_outline</i>
+                </div>
+                <p class="card-category">PM 2.5</p>
+                <h3 class="card-title">
+                  <small id="pm25"><%= PM25 %></small>
+                </h3>
+              </div>
+              <div class="card-footer">
+                <div class="stats">
+                  <i class="material-icons text-danger">warning</i>say somthing
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--div class="col-lg-3 col-md-6 col-sm-6"-->
+          <div class="col-4">
+            <div class="card card-stats">
+              <div class="card-header card-header-warning card-header-icon">
+                <div class="card-icon">
+                  <i class="material-icons">error_outline</i>
+                </div>
+                <p class="card-category">PM 10</p>
+                <h3 class="card-title">
+                  <small id="pm10"><%= PM10 %></small>
+                </h3>
+              </div>
+              <div class="card-footer">
+                <div class="stats">
+                  <i class="material-icons text-danger">warning</i>say somthing
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card card-stats">
+              <div class="card-header card-header-info card-header-icon">
+                <div class="card-icon">
+                  <i class="material-icons">cloud</i>
+                </div>
+                <p class="card-category">Humidity</p>
+                <h3 id="hum" class="card-title"><%= humidity %></h3>
+              </div>
+              <div class="card-footer">
+                <div class="stats">
+                  <i class="material-icons">update</i> just update
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card card-stats">
+              <div class="card-header card-header-danger card-header-icon">
+                <div class="card-icon">
+                  <i class="material-icons">wb_sunny</i>
+                </div>
+                <p class="card-category">Temperature</p>
+                <h3 id="tem" class="card-title"><%= temperature %></h3>
+              </div>
+              <div class="card-footer">
+                <div class="stats">
+                  <i class="material-icons">update</i> just update
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--div class="col-lg-3 col-md-6 col-sm-6"-->
+
+
+
+      </div>
+
+      <footer class="footer">
+        <div class="container-fluid">
+          <nav class="float-left">
+            <ul>
+              <li>
+                <a href="https://reurl.cc/VOz35">
+                  帥哥
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+<script>
+  $(document).ready(function(){
+    setInterval(ajaxCall, 10000); //300000 MS == 5 minutes
+
+    function ajaxCall() {
+      $.post("/ajax_update", (result) => {
+        $('#pm1').text(result.PM1);
+        $('#pm25').text(result.PM25);
+        $('#pm10').text(result.PM10);
+        $('#hum').text(result.humidity);
+        $('#tem').text(result.temperature);
+        set(humidity,temperature,PM25);
+      });
+    }
+  });
+</script>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="js/style.js"></script>
